@@ -10,7 +10,7 @@ final int pattern3 = 2;
 
 void setup() {
   size (600, 600);
-  mode = pattern1;
+  mode = pattern2;
 }
 
 void draw() {
