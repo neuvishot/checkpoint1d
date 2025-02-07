@@ -1,18 +1,20 @@
-int r = 0;// global variable
+float r = 0;// global variable
 
 void pattern2() {
   background(#278DF0);
-  stroke(0,0,0);
+  stroke(0, 0, 0);
   int spincount = 0;
-  while(spincount < 5){
-  circ(300, 300, r);
-  r++;
-  spincount++;
-  }
-  
+
+
+  //while(spincount < 5){
+  //circ(300, 300, r);
+  //r =  r + 1;
+  //spincount++;
+  //}
+
   // center point
   circle(300, 300, 50);
-  
+
   //int sc, ss;
   //sc = 0;
   //ss = ;
