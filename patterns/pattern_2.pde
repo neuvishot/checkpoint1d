@@ -3,28 +3,19 @@ float r = 0;// global variable
 void pattern2() {
   background(#278DF0);
   stroke(0, 0, 0);
-  int spincount = 0;
 
-
-  //while(spincount < 5){
-  //circ(300, 300, r);
-  //r =  r + 1;
-  //spincount++;
-  //}
-
-  // center point
-  circle(300, 300, 50);
-
-  //int sc, ss;
-  //sc = 0;
-  //ss = ;
-
-  //while (sc < 10){
-  //  stroke(0,0,0);
-  // circle(300, 300, ss);
-  // sc ++;
-  // ss = ss - 50;
-  //}
+  int cir = 0;
+  int xc, yc;
+  xc = yc = 0;
+  while ( cir < 50) {
+    circ(xc, 25 + yc);
+    cir++;
+    xc = xc + 105;
+    if (xc > 630) {
+      yc = yc + 100;
+      xc = 0;
+    }
+  }
 
   //buttons
   fill(#FFF7F7);
@@ -34,11 +25,22 @@ void pattern2() {
   circle(570, 570, 50);
 }
 
-void circ(float x, float y, float r) {
+void circ(float x, float y) {
   pushMatrix();
   translate(x, y);
-  rotate(radians(r));
-  circle(120, 0, 240);
+  int spincount = 0;
+  int e = 210;
+  int c = 0;
+      fill(255, 255, 255);
+    circle(0, 0, 215);
+  while (spincount < 10) {
+    noStroke();
+    fill(37, 200 - c, 232);
+    circle(0, 0, e);
+    spincount++;
+    e = e - 30;
+    c = c - 10;
+  }
   popMatrix();
 }
 
