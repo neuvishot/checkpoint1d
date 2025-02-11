@@ -4,8 +4,9 @@ void pattern3() {
   int x, y;
   x = y = 0;
   stroke(0,0,0);
+  noStroke();
   
-  background(#3BBDFC);
+  background(#AAF7EE);
 
 
   //background row
@@ -29,7 +30,7 @@ void pattern3() {
   //front row
   while (other < 80) {
     pushMatrix();
-    fill(255, 255, 3, 200);
+    fill(255, 255, 3, 150);
     scale(.5);
     squares(xx, yy);
     other++;
